@@ -23,4 +23,13 @@ public class CntCountryService {
 
         return cntCountryDto;
     }
+
+    public CntCountryDto findById(Long id) {
+
+        CntCountryEntity cntCountry = cntCountryEntityService.getByIdWithControl(id);
+
+        CntCountryDto cntCountryDto = CntCountryMapper.INSTANCE.convertToCntCountryDto(cntCountry);
+
+        return cntCountryDto;
+    }
 }

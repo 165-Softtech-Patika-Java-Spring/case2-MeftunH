@@ -11,4 +11,5 @@ public class CntCountryEntityService extends BaseEntityService<CntCountryEntity,
     public CntCountryEntityService(CntCountryDao dao){
         super(dao);
     }
+
 }
