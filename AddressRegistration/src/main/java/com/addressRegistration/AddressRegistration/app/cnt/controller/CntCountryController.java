@@ -22,4 +22,11 @@ public class CntCountryController {
 
         return ResponseEntity.ok(cntCountryDto);
     }
+
+    @GetMapping("/{id}")
+    public ResponseEntity findById(@PathVariable Long id){
+        CntCountryDto cntCountryDto = cntCountryService.findById(id);
+
+        return ResponseEntity.ok(cntCountryDto);
+    }
 }
