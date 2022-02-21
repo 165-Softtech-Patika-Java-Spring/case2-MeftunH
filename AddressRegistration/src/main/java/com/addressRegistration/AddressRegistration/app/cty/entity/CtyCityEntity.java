@@ -19,6 +19,7 @@ import java.util.Set;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+
 public class CtyCityEntity extends BaseEntity {
 
     @Id
@@ -32,9 +33,7 @@ public class CtyCityEntity extends BaseEntity {
     @Column(name = "PLATE", length = 3, nullable = false,unique = true)
     private Integer plate;
 
-
-    @ManyToOne
-    @JoinColumn(name="country_id", nullable=false)
-    private CntCountryEntity country;
+    @Column(name = "country_id")
+    private Long country_id;
 
   }

@@ -1,5 +1,6 @@
 package com.addressRegistration.AddressRegistration.app.cty.dao;
 
+import com.addressRegistration.AddressRegistration.app.cnt.entity.CntCountryEntity;
 import com.addressRegistration.AddressRegistration.app.cty.entity.CtyCityEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

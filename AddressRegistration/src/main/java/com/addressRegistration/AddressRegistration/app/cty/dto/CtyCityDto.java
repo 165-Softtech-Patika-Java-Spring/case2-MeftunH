@@ -12,6 +12,6 @@ public class CtyCityDto {
     private Long id;
     private String name;
     private Integer plate;
-    private Integer country_id;
+    private Long country_id;
 
 }

@@ -32,6 +32,4 @@ public class CntCountryEntity extends BaseEntity {
     @Column(name = "CODE", length = 11, nullable = false,unique = true)
     private Integer code;
 
-    @OneToMany(mappedBy="country")
-    private Set<CtyCityEntity> cities;
 }

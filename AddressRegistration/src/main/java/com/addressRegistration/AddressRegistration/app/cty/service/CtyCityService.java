@@ -5,6 +5,7 @@ import com.addressRegistration.AddressRegistration.app.cnt.dto.CntCountryDto;
 import com.addressRegistration.AddressRegistration.app.cnt.entity.CntCountryEntity;
 import com.addressRegistration.AddressRegistration.app.cty.converter.CtyCityMapper;
 import com.addressRegistration.AddressRegistration.app.cty.dto.CtyCityDto;
+import com.addressRegistration.AddressRegistration.app.cty.dto.CtyCitySaveDto;
 import com.addressRegistration.AddressRegistration.app.cty.entity.CtyCityEntity;
 import com.addressRegistration.AddressRegistration.app.cty.service.entity.CtyCityEntityService;
 import lombok.AllArgsConstructor;
@@ -16,7 +17,7 @@ public class CtyCityService {
 
     private final CtyCityEntityService ctyCityEntityService;
 
-    public CtyCityDto save(CtyCityDto ctyCitySaveRequestDto) {
+    public CtyCityDto save(CtyCitySaveDto ctyCitySaveRequestDto) {
 
         CtyCityEntity ctyCity = CtyCityMapper.INSTANCE.convertToCtyCity(ctyCitySaveRequestDto);
 

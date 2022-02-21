@@ -2,6 +2,7 @@ package com.addressRegistration.AddressRegistration.app.cty.controller;
 
 import com.addressRegistration.AddressRegistration.app.cnt.dto.CntCountryDto;
 import com.addressRegistration.AddressRegistration.app.cty.dto.CtyCityDto;
+import com.addressRegistration.AddressRegistration.app.cty.dto.CtyCitySaveDto;
 import com.addressRegistration.AddressRegistration.app.cty.service.CtyCityService;
 import lombok.AllArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -17,16 +18,16 @@ public class CtyCityController {
 
     private final CtyCityService ctyCityService;
     @PostMapping
-    public ResponseEntity save(@RequestBody CtyCityDto ctyCitySaveDto){
+    public ResponseEntity save(@RequestBody CtyCitySaveDto ctyCitySaveDto){
 
         CtyCityDto ctyCityDto = ctyCityService.save(ctyCitySaveDto);
 
         return ResponseEntity.ok(ctyCityDto);
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<CtyCityDto> findById(@PathVariable Long id){
-        CtyCityDto ctyCityDto = ctyCityService.findByPlate(id.intValue());
+    @GetMapping("/{plate}")
+    public ResponseEntity<CtyCityDto> findByPlate(@PathVariable Long plate){
+        CtyCityDto ctyCityDto = ctyCityService.findByPlate(plate.intValue());
 
         return ResponseEntity.ok(ctyCityDto);
     }
