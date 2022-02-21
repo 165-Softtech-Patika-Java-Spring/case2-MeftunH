@@ -1,7 +1,4 @@
 package com.addressRegistration.AddressRegistration.app.cty.service.entity;
-
-import com.addressRegistration.AddressRegistration.app.cnt.dao.CntCountryDao;
-import com.addressRegistration.AddressRegistration.app.cnt.entity.CntCountryEntity;
 import com.addressRegistration.AddressRegistration.app.cty.dao.CtyCityDao;
 import com.addressRegistration.AddressRegistration.app.cty.entity.CtyCityEntity;
 import com.addressRegistration.AddressRegistration.app.gen.service.BaseEntityService;
