@@ -12,11 +12,11 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/v1/countries")
 @AllArgsConstructor
 
-
 public class CntCountryController {
+
     private final CntCountryService cntCountryService;
     @PostMapping
-    public ResponseEntity save(@RequestBody CntCountryDto cntCountrySaveDto){
+    public ResponseEntity<CntCountryDto> save(@RequestBody CntCountryDto cntCountrySaveDto){
 
         CntCountryDto cntCountryDto = cntCountryService.save(cntCountrySaveDto);
 
@@ -24,7 +24,7 @@ public class CntCountryController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity findById(@PathVariable Long id){
+    public ResponseEntity<CntCountryDto> findById(@PathVariable Long id){
         CntCountryDto cntCountryDto = cntCountryService.findById(id);
 
         return ResponseEntity.ok(cntCountryDto);
