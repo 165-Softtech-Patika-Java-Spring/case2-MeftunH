@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4bc65272-dcbf-4546-92f7-ed393740da4b" name="Changes" comment="remove .idea folder from project">
-      <change beforePath="$PROJECT_DIR$/AddressRegistration/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AddressRegistration/src/main/java/com/addressRegistration/AddressRegistration/AddressRegistrationApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/AddressRegistration/src/main/java/com/addressRegistration/AddressRegistration/AddressRegistrationApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AddressRegistration/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/AddressRegistration/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AddressRegistration/src/main/java/com/addressRegistration/AddressRegistration/app/dst/dto/DstDistrictDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/AddressRegistration/src/main/java/com/addressRegistration/AddressRegistration/app/dst/dto/DstDistrictDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AddressRegistration/src/main/java/com/addressRegistration/AddressRegistration/app/dst/entity/DstDistrict.java" beforeDir="false" afterPath="$PROJECT_DIR$/AddressRegistration/src/main/java/com/addressRegistration/AddressRegistration/app/dst/entity/DstDistrict.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,6 +56,7 @@
       <workItem from="1645298354182" duration="166000" />
       <workItem from="1645298556236" duration="17000" />
       <workItem from="1645298603638" duration="144000" />
+      <workItem from="1646500598567" duration="157000" />
     </task>
     <task id="LOCAL-00001" summary="project init">
       <created>1645280456314</created>
